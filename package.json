@@ -1,0 +1,34 @@
+{
+  "name": "@web-growing/expand-cross-env",
+  "version": "1.0.0-alpha.1",
+  "description": "基于cross-env的扩展,使之支持文件配置环境变量。",
+  "main": "index.js",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "bin": {
+    "exp-cross-env": "bin/expand-cross-env.js"
+  },
+  "files": [
+    "package.json",
+    "bin",
+    "lib",
+    "index.js"
+  ],
+  "man": "index.js",
+  "keywords": [
+    "cross-env",
+    "process env",
+    "cross-env with file"
+  ],
+  "author": "RookieHao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RookieHao/expand-cross-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RookieHao/expand-cross-env/issues"
+  },
+  "homepage": "https://github.com/RookieHao/expand-cross-env/#README.md"
+}
