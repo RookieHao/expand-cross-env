@@ -1,6 +1,6 @@
 {
   "name": "@web-growing/expand-cross-env",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "基于cross-env的扩展,使之支持文件配置环境变量。",
   "main": "index.js",
   "dependencies": {

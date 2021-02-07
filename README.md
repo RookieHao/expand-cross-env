@@ -12,7 +12,7 @@
 npm install @web-growing/expand-cross-env -D
 ```
 
-### 使用：
+### 使用方法：
 
 - 命令行：
 
@@ -28,26 +28,20 @@ npm install @web-growing/expand-cross-env -D
 
   > 项目根目录创建 `.cross-env.js` 或者 `.cross-env.json` 文件
 
-  配置文件特殊属性说明：
+  js 文件中支持函数类型的值,函数参数为 nodejs 的 path 模块
 
-  - resolveContext: 路径解析上下文, 用来配合 pathVars 使用;
+  **For Example :**
 
-    默认值: process.cwd();
+  ```
+  module.exports = {
+    NODE_ENV: "development",
+    COMAND: "build",
+    filePath: path => path.resolve(__dirname,"xxx.ext"),
 
-  - pathVars{ key: value } : 变量值为路径时使用;
+    ...
 
-    例如:
-
-    ```
-    module.exports = {
-      resolveContext: "",
-      pathVars: {
-        renderDir: "./renderer"
-      }
-    }
-    ```
-
-    pathVars 中的 value 为相对路径时, 会使用 `path.resolve(resolveContext,value)`解析。
+  }
+  ```
 
 ### 说明：
 
